@@ -10,7 +10,8 @@ import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var heartButton: UIButton!
-    var player: AVAudioPlayer?
+    var player: AVAudioPlayer! = nil
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,19 +20,22 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        self.player?.play()
+        player?.play()
+        print("view did appear")
+        print(player)
+        print(self.player?.play())
+        
         
     }
     func setupPlayer() {
-        guard let url = Bundle.main.url(forResource: "invisible", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "Invisible", withExtension: "mp3") else { return }
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            print(player)
-            player?.play()
             guard let player = player else { return }
             player.prepareToPlay()
+//            player.play()
         } catch let error {
             print(error.localizedDescription)
         }
