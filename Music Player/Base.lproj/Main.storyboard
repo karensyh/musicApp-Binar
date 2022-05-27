@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_Player" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oOp-4b-bCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SanFrancisco" translatesAutoresizingMaskIntoConstraints="NO" id="gxZ-HT-qjY">
+                                <rect key="frame" x="30" y="-135" width="315" height="660"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Sepatu Karen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifG-Jr-k5N">
+                                <rect key="frame" x="30" y="311" width="236" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nurin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-sU-YNJ">
+                                <rect key="frame" x="30" y="352" width="52" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Athaya Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-7s-wAP">
+                                <rect key="frame" x="78" y="20" width="200" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A0a-5I-6zu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnJ-aG-u2u">
+                                <rect key="frame" x="278" y="311" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="AiT-GA-NW8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="Heart icon">
+                                    <backgroundConfiguration key="background"/>
+                                    <attributedString key="attributedTitle"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kHu-QL-bpT"/>
+                        <color key="backgroundColor" red="0.91976243260000001" green="0.69936246930000001" blue="0.88409811130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kHu-QL-bpT" firstAttribute="trailing" secondItem="fDX-7s-wAP" secondAttribute="trailing" constant="97" id="0bB-z2-bqk"/>
+                            <constraint firstItem="kHu-QL-bpT" firstAttribute="bottom" secondItem="EnJ-aG-u2u" secondAttribute="bottom" constant="289" id="3UV-KG-87z"/>
+                            <constraint firstItem="kHu-QL-bpT" firstAttribute="bottom" secondItem="gxZ-HT-qjY" secondAttribute="bottom" constant="142" id="67r-Y3-YhL"/>
+                            <constraint firstItem="gxZ-HT-qjY" firstAttribute="leading" secondItem="ceB-sU-YNJ" secondAttribute="leading" id="Kwx-ky-eJp"/>
+                            <constraint firstItem="ifG-Jr-k5N" firstAttribute="top" secondItem="EnJ-aG-u2u" secondAttribute="top" id="MgL-zD-d8A"/>
+                            <constraint firstItem="EnJ-aG-u2u" firstAttribute="leading" secondItem="ifG-Jr-k5N" secondAttribute="trailing" constant="12" id="due-Xu-YWX"/>
+                            <constraint firstItem="fDX-7s-wAP" firstAttribute="top" secondItem="kHu-QL-bpT" secondAttribute="top" constant="20" id="eE7-Sy-8qE"/>
+                            <constraint firstItem="kHu-QL-bpT" firstAttribute="bottom" secondItem="ceB-sU-YNJ" secondAttribute="bottom" constant="288" id="gPj-1o-ja6"/>
+                            <constraint firstItem="gxZ-HT-qjY" firstAttribute="trailing" secondItem="EnJ-aG-u2u" secondAttribute="trailing" id="gor-Si-RPe"/>
+                            <constraint firstItem="gxZ-HT-qjY" firstAttribute="leading" secondItem="kHu-QL-bpT" secondAttribute="leading" constant="30" id="ipU-Y5-9YK"/>
+                            <constraint firstItem="gxZ-HT-qjY" firstAttribute="centerX" secondItem="oOp-4b-bCg" secondAttribute="centerX" id="nvy-pv-rUU"/>
+                            <constraint firstItem="ifG-Jr-k5N" firstAttribute="centerY" secondItem="oOp-4b-bCg" secondAttribute="centerY" id="qlT-kr-AYF"/>
+                            <constraint firstItem="ifG-Jr-k5N" firstAttribute="leading" secondItem="ceB-sU-YNJ" secondAttribute="leading" id="rLM-DY-CKv"/>
+                            <constraint firstItem="fDX-7s-wAP" firstAttribute="leading" secondItem="kHu-QL-bpT" secondAttribute="leading" constant="78" id="wAR-23-e9B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="81.409295352323838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Heart icon" width="24" height="24"/>
+        <image name="SanFrancisco" width="986" height="660"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
